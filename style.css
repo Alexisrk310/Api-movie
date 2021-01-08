@@ -23,10 +23,10 @@ header{
     
     
 }
-.nav-ul > label{
+.nav-ul > .titulo > label{
     font-weight: 700;
     margin-left: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     font-size: 23px;
 }
 .buscador{
@@ -80,17 +80,20 @@ header{
     display: grid;
     justify-content: center;
     grid-template-columns: 40% 40%;
+    
     align-items: center;
-    gap: 100px;
+    gap: 20px;
 }
 
 @media screen AND (max-width:376px){
     /* Header */
 
-    .nav-ul > label{
-        display: block;
-       margin: 0px;
-       display: none;
+    .nav-ul > .titulo > label{
+    position: relative;
+    top: 19px;
+    margin: 0px;
+    letter-spacing: 0px;
+       
     }
     form{
         
@@ -110,9 +113,7 @@ header{
         margin-left: 5px;
         
     }
-    .titulo > label{
-        margin-top: 25px;
-    }
+   
   .ul-li{
       display: none;
   }

@@ -15,10 +15,19 @@ getMovie().then((responsive) => {
 	console.log(choose);
 	choose.forEach((items) => {
 		codigo = `
-    
-        <div class="card">
-           <img src="${items.image}">
-        </div>`;
+		<div class="card">
+		<h1>${items.name}:</h1>
+		   <img src="${items.image}"> <br>
+		   
+		</div>
+	<div>
+	   <h2>Descripción:</h2> 
+		<p>${items.description}</p>
+		
+		<b><p>Actor:</b> ${items.actors}</p> 
+		<b><p>Director:</b> ${items.director}</p>
+	<div>
+		`;
 		content.innerHTML += codigo;
 	});
 });
