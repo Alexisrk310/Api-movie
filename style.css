@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background-color: #cdd0cb;
+    
+}
+/* Header AND Navbar */
+header{
+    width: 100vw;
+    height: 75px;
+    background-color: #f05454;
+    margin-bottom: 90px;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.nav-ul > label{
+    font-weight: 700;
+    margin-left: 40px;
+    letter-spacing: 3px;
+    font-size: 23px;
+}
+.buscador{
+    width: 270px;
+    height: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #fad586;
+    outline: none;
+    padding-left: 10px;
+}
+.lupa{
+    
+}
+.fa-search{
+    
+}
+.ul-li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+.ul-li > li > a{
+    text-decoration: none;
+    margin-right: 20px; 
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;  
+    color: black;
+
+}
+.ul-li > li > a:hover{
+    background-color: #fdffbc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ul-li > li{
+    list-style: none;
+    
+}
+/* Fin HEADER AND NAVBAR */
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    gap: 100px;
+}
+
+@media screen AND (max-width:376px){
+    /* Header */
+
+    .nav-ul > label{
+        display: block;
+       margin: 0px;
+       display: none;
+    }
+    form{
+        
+        display: flex;
+        
+        
+    }
+    .buscador{
+        width: 230px;
+    
+    }
+    .titulo{
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 3px;
+        margin-left: 5px;
+        
+    }
+    .titulo > label{
+        margin-top: 25px;
+    }
+  .ul-li{
+      display: none;
+  }
+  /* END HEADER */
+    img{
+        max-width: 100%;
+        width: 500px;
+        height: 400px;
+    }
+    .card{
+    width: 300px;
+
+    }
+    .contenedor{
+       
+        grid-template-columns: 85%;
+    }
+}
